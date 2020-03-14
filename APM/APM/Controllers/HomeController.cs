@@ -12,7 +12,8 @@ namespace APM.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            UserModel _model = new UserModel() { UserStatus = 0 };
+            return View(_model);
         }
 
         public IActionResult About()
